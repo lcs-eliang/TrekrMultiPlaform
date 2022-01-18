@@ -13,6 +13,10 @@
 		990F84F0279704EE00F1DB84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990F84DE279704E700F1DB84 /* ContentView.swift */; };
 		990F84F1279704EE00F1DB84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990F84DF279704EE00F1DB84 /* Assets.xcassets */; };
 		990F84F2279704EE00F1DB84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990F84DF279704EE00F1DB84 /* Assets.xcassets */; };
+		990F84FF279708B600F1DB84 /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 990F84FD279708B600F1DB84 /* tips.json */; };
+		990F8500279708B600F1DB84 /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = 990F84FD279708B600F1DB84 /* tips.json */; };
+		990F8501279708B600F1DB84 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 990F84FE279708B600F1DB84 /* locations.json */; };
+		990F8502279708B600F1DB84 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 990F84FE279708B600F1DB84 /* locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,8 @@
 		990F84E4279704EE00F1DB84 /* TrekrMultiPlaform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlaform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		990F84EA279704EE00F1DB84 /* TrekrMultiPlaform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrekrMultiPlaform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		990F84EC279704EE00F1DB84 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		990F84FD279708B600F1DB84 /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
+		990F84FE279708B600F1DB84 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 		990F84FC2797057900F1DB84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				990F84FE279708B600F1DB84 /* locations.json */,
+				990F84FD279708B600F1DB84 /* tips.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				990F84F1279704EE00F1DB84 /* Assets.xcassets in Resources */,
+				990F8501279708B600F1DB84 /* locations.json in Resources */,
+				990F84FF279708B600F1DB84 /* tips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				990F84F2279704EE00F1DB84 /* Assets.xcassets in Resources */,
+				990F8502279708B600F1DB84 /* locations.json in Resources */,
+				990F8500279708B600F1DB84 /* tips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
