@@ -14,9 +14,37 @@ struct TrekrMultiPlaformApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                LocationsList(store: store)
+            
+            TabView {
+                
+                NavigationView {
+                    LocationsList(store: store)
+                    
+                }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Locations")
+                }
+                
+                NavigationView {
+                    WorldMap()
+                }
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Maps")
+                }
+                
+                NavigationView {
+                    TipsList()
+                }
+                .tabItem {
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Tips")
+                }
+                
             }
+            
+
         }
     }
 }
