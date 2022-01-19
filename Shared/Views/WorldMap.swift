@@ -28,6 +28,10 @@ struct WorldMap: View {
             MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: location.latitude,
                                                              longitude: location.longitude)) {
                 
+                NavigationLink(destination: LocationDetail(location: location)) {
+                    
+                }
+                
                 Image(location.country)
                     .resizable()
                     .cornerRadius(10)
