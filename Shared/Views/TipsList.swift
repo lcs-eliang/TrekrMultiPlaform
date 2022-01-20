@@ -14,11 +14,11 @@ struct TipsList: View {
     
     var body: some View {
        
-        List(tips, id: \.text) { tip in
+        List(tips, id: \.text, children: \.children) { tip in
             
             // If there are children on this particular tip...
             if tip.children != nil {
-                labrel()tip.text, systemImage:"Quote.bubble"
+                Label(tip.text, systemImage:"Quote.bubble")
             } else {
             Text(tip.text)
             }
