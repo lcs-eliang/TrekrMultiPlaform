@@ -26,13 +26,24 @@ struct TrekrMultiPlaformApp: App {
                     Text("Locations")
                 }
                 
+                #if os(iOS)
                 NavigationView {
-                    WorldMap(store: store)
+                    WorldMap(store: testStore)
                 }
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Maps")
+                    Text("Map")
                 }
+                #else
+                NavigationView {
+                    WorldMap(store: testStore)
+                        .frame(width: 400)
+                }
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+                #endif
                 
                 NavigationView {
                     TipsList()
